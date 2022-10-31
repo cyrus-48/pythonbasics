@@ -5,16 +5,14 @@
 import math
 from math import tan
 
-numberOfSides = int(input("Enter number of sides : "))
-length = float(input("Enter length of the polygon : "))
 
-
-def areaOfPolygon(n, l):
-    n = numberOfSides
-    l = length
-    area = (n * pow(l, 2)) / (4 * tan(math.pi  / n))
+def areaOfPolygon(n: int, l: float) -> float:
+    area: float = (n * pow(l, 2)) / (4 * tan(math.pi / n))
     return area
 
 
-area = areaOfPolygon(numberOfSides, length)
+numberOfSides = int(input("Enter number of sides : "))
+length = float(input("Enter length of the polygon : "))
+
+area: float = areaOfPolygon(numberOfSides, length)
 print(area)

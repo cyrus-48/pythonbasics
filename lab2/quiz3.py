@@ -2,17 +2,14 @@
 # and then displays the future investment value using the following formula:
 # futureInvestmentAmount = investmentAmount * (1 + monthlyInterestRate) ^ numberOfMonths
 
-investmentAmount = float(input("Enter investment amount"))
-interestRate = float(input("Enter interest rate"))
-numberOfYears = float(input("Enter number of years"))
+def investmentCalculator(investAmount, interestRate, numberOfYears) -> float:
+    futureInvestmentAmount = investAmount * pow((1 + (interestRate / 1200)), numberOfYears * 12)
+    return futureInvestmentAmount
 
 
-def investmentCalculator(investAmount, interestRate, numberOfYears):
-    if investmentAmount <= 0 and interestRate <= 0 and numberOfYears <= 0:
-        print("Error when calculating your investment amount")
-    else:
-        futureInvestmentAmount = investAmount * pow((1 + (interestRate / 100)), numberOfYears)
-        print(futureInvestmentAmount)
+investmentAmount: float = float(input("Enter investment amount"))
+interestRate: float = float(input("Enter interest rate"))
+numberOfYears: float = float(input("Enter number of years"))
 
-
-investmentCalculator(investmentAmount, interestRate, numberOfYears)
+futureInvestment: float = investmentCalculator(investmentAmount, interestRate, numberOfYears)
+print(futureInvestment)

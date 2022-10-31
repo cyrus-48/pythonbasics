@@ -4,6 +4,11 @@
 # capitalization! Note: no spaces!) And if first and last were "Florean" and "fortescue" respectively,
 # then your expression's value would be "Fortescue,Florean".
 
-first = input("Enter first name :")
-last = input("Enter last name : ")
-print(last.capitalize() + "," + first.capitalize())
+def formattedString(first: str, last: str) -> str:
+    return last.capitalize() + first.capitalize()
+
+
+first: str = input("Enter first name :")
+last: str = input("Enter last name : ")
+
+myString = formattedString(first, last)

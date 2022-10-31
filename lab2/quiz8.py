@@ -1,10 +1,7 @@
 from math import sqrt
 
-k = 10
-m = 40
 
-
-def computePerfectSqaures(k, m):
+def computePerfectSqaures(k: int, m:int) -> None:
     q = 0
     for i in range(k, m):
         sr = int(sqrt(i))

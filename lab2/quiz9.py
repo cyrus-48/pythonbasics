@@ -1,10 +1,6 @@
 # Given a positive integern, assign True to is_prime if n has no factors other than 1 and itself. (Remember,
 #  m is a factor of n if m divides n evenly.)
-n = int(input("Input an integer  : "))
-is_prime = False
-
-
-def computePrime(n):
+def computePrime(n:int)->bool:
     count = 0
     for x in range(1, n):
         if n % x == 0:
@@ -17,4 +13,7 @@ def computePrime(n):
     return is_prime
 
 
-print(computePrime(n))
+n = int(input("Input an integer  : "))
+is_prime:bool = False
+
+print(f"is {n} prime : ",computePrime(n))

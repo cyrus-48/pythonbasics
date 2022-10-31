@@ -1,7 +1,7 @@
 # Write a Python function that takes a sequence of numbers and determines whether all the numbers are different from
 # each other.
 
-def test_distinct(data):
+def test_distinct(data:list)->bool:
     # len(data) return the length of the list , len(set(data)) returns the lenght of the set formed after parding the
     # list to set.
     if len(data) == len(set(data)):
