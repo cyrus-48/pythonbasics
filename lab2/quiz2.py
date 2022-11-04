@@ -2,7 +2,7 @@
 #ax + by = e
 #cx + dy = f
 #x = (ed - bf) / (ad - bc)
-#y = (af -ec) / (ad - bc)
+#y = (af -ec) / (ad - bc)2
 
 def cramerRule(a,b,c,d,e,f)->None:
     if (a*d)-(b*c) == 0:

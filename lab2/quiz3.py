@@ -4,12 +4,13 @@
 
 def investmentCalculator(investAmount, interestRate, numberOfYears) -> float:
     futureInvestmentAmount = investAmount * pow((1 + (interestRate / 1200)), numberOfYears * 12)
-    return futureInvestmentAmount
+    
+    return round(futureInvestmentAmount , 2)
 
 
-investmentAmount: float = float(input("Enter investment amount"))
-interestRate: float = float(input("Enter interest rate"))
-numberOfYears: float = float(input("Enter number of years"))
+investmentAmount: float = float(input("Enter investment amount : "))
+interestRate: float = float(input("Enter interest rate : "))
+numberOfYears: float = float(input("Enter number of years : "))
 
 futureInvestment: float = investmentCalculator(investmentAmount, interestRate, numberOfYears)
 print(futureInvestment)

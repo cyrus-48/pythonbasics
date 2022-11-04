@@ -18,6 +18,6 @@ def sentenceCount(sentence: str) -> None:
 
 
 sentence: str = input("Enter a sentence : ")
-print("Enter a sentence : .")
+print("Enter a sentence : ."+sentence)
 
 sentenceCount(sentence)

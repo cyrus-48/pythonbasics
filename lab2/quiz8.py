@@ -1,4 +1,5 @@
 from math import sqrt
+from tracemalloc import start
 
 
 def computePerfectSqaures(k: int, m:int) -> None:
@@ -11,5 +12,8 @@ def computePerfectSqaures(k: int, m:int) -> None:
 
     print("number of perfect squares : ", q)
 
-
-computePerfectSqaures(100, 400)
+print("Enter the range of numbers : ")
+start:int = int(input("Enter the start of the range : "))
+end:int = int(input("Enter the end of the range : "))
+computePerfectSqaures(start, end)
+ 

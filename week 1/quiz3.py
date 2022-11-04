@@ -14,7 +14,7 @@ print(mobile_num)
 list1 = list(map(int, mobile_num))
 if len(mobile_num) == 10:
     print(list1)
-    print(absent_digits(list1))
+    print("missing numbers : ",absent_digits(list1))
 
 else:
     print('Please enter 10 digits!!')

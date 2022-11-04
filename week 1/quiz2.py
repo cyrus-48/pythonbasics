@@ -1,5 +1,5 @@
 #Write a Python program to print a long text, convert the string to a list and print all the words and their frequencies. 
-def wordsCount(words: str):
+def wordsCount(words: str) -> None:
     word_list = words.split()
     word_freq = [word_list.count(n) for n in word_list]
     print(word_freq)

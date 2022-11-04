@@ -1,15 +1,17 @@
 #  pairs of adjacent elements are compared and the elements are swapped if they are not in order
 # time complexity of O(n^2)
-array = [9, 7, 4, 8, 6, 5, 3, 1, 2]
+# space complexity of O(1)
+# stable sort
+# in place sort
+#best case: O(n)
+# worst case: O(n^2)
+# average case: O(n^2)
+ 
+def bubble_sort(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr)-1):
+            if arr[j]>arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
 
-
-def bubbleSort(array):
-    for i in range(len(array)-1):
-        for x in range(0, len(array)-i-1):
-            if array[x] < array[x + 1]:
-                temp = array[x]
-                array[x] = array[x + 1]
-                array[x + 1] = temp
-
-
-print(bubbleSort([9, 7, 4, 8, 6, 5, 3, 1, 2]))
+print(bubble_sort([9, 7, 4, 8, 6, 5, 3, 1, 2]))

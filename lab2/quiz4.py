@@ -5,10 +5,11 @@
 # then your expression's value would be "Fortescue,Florean".
 
 def formattedString(first: str, last: str) -> str:
-    return last.capitalize() + first.capitalize()
+    return last.capitalize() + ","+first.capitalize()
 
 
 first: str = input("Enter first name :")
 last: str = input("Enter last name : ")
 
 myString = formattedString(first, last)
+print(myString)

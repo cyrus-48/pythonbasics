@@ -10,4 +10,5 @@ while lo<=hi:
     results+=lo
     lo+=1
     i=results
-print('Total results=',i)
+print(i)
+ 

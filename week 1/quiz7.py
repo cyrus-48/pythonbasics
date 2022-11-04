@@ -16,5 +16,5 @@ for i in range(0, num_of_element):
     num = int(input(f'Enter element {i} of the list'))
     list1.append(num)
     print(list1)
-k = int(input("Enter to be compared with sum : "))
+k = int(input("Enter to number be compared with sum : "))
 print(check_sum(list1 , k))
